@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  studentapp:
+    build: .
+    ports:
+      - "8080:8080"
+
+  sample-web:
+    build: .
+    ports:
+      - "9090:80"
