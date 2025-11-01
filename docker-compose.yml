@@ -10,3 +10,12 @@ services:
     build: .
     ports:
       - "9090:80"
+  todoapp:
+    build: ../todoapp
+    ports: 
+       - "9090:9090"
+    volumes:
+      - ../todoapp:/app
+    networks:
+      -host
+      
